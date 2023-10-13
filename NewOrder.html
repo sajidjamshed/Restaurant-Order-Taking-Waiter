@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Order Taking System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Taking System</h1>
+        
+        <div class="table-selection">
+            <h2>Tables</h2>
+            <ul class="table-list">
+                <!-- Add table buttons here (up to 10) -->
+                <li><button class="table-button" id="table1">Table 1</button></li>
+                <li><button class="table-button" id="table2">Table 2</button></li>
+                <!-- Add buttons for more tables as needed -->
+            </ul>
+        </div>
+
+        <div class="category-selection">
+            <h2>Categories</h2>
+            <ul class="category-list">
+                <!-- Add category buttons here -->
+                <li><button class="category-button" id="appetizers">Appetizers</button></li>
+                <li><button class="category-button" id="entrees">Entrees</button></li>
+                <!-- Add buttons for more categories as needed -->
+            </ul>
+        </div>
+
+        <div class="item-selection">
+            <h2>Items</h2>
+            <ul class="item-list">
+                <!-- Add items in each category -->
+                <li class="item" data-category="appetizers">
+                    <span class="item-name">Item 1</span>
+                    <span class="item-price">$5.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+                <li class="item" data-category="appetizers">
+                    <span class="item-name">Item 2</span>
+                    <span class="item-price">$4.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+                <!-- Add more items for each category -->
+            </ul>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul class="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
