@@ -3,57 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Bootstrap CSS (you may need to adjust the version) -->
     <title>Order Taking System</title>
 </head>
 <body>
     <div class="container">
-        <h1>Order Taking System</h1>
-        
-        <div class="table-selection">
-            <h2>Tables</h2>
-            <ul class="table-list">
-                <!-- Add table buttons here (up to 10) -->
-                <li><button class="table-button" id="table1">Table 1</button></li>
-                <li><button class="table-button" id="table2">Table 2</button></li>
-                <!-- Add buttons for more tables as needed -->
-            </ul>
+        <h1 class="text-center">Order Taking System</h1>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Tables</h2>
+                <div class="list-group">
+                    <!-- Add table buttons here (up to 10) -->
+                    <button class="list-group-item list-group-item-action" id="table1">Table 1</button>
+                    <button class="list-group-item list-group-item-action" id="table2">Table 2</button>
+                    <!-- Add buttons for more tables as needed -->
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Categories</h2>
+                <div class="list-group">
+                    <!-- Add category buttons here -->
+                    <button class="list-group-item list-group-item-action" id="appetizers">Appetizers</button>
+                    <button class="list-group-item list-group-item-action" id="entrees">Entrees</button>
+                    <!-- Add buttons for more categories as needed -->
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Items</h2>
+                <div class="list-group">
+                    <!-- Add items in each category -->
+                    <button class="list-group-item list-group-item-action" data-category="appetizers">
+                        Item 1
+                        <span class="badge badge-primary badge-pill">$5.99</span>
+                    </button>
+                    <button class="list-group-item list-group-item-action" data-category="appetizers">
+                        Item 2
+                        <span class="badge badge-primary badge-pill">$4.99</span>
+                    </button>
+                    <!-- Add more items for each category -->
+                </div>
+            </div>
         </div>
 
-        <div class="category-selection">
-            <h2>Categories</h2>
-            <ul class="category-list">
-                <!-- Add category buttons here -->
-                <li><button class="category-button" id="appetizers">Appetizers</button></li>
-                <li><button class="category-button" id="entrees">Entrees</button></li>
-                <!-- Add buttons for more categories as needed -->
-            </ul>
-        </div>
-
-        <div class="item-selection">
-            <h2>Items</h2>
-            <ul class="item-list">
-                <!-- Add items in each category -->
-                <li class="item" data-category="appetizers">
-                    <span class="item-name">Item 1</span>
-                    <span class="item-price">$5.99</span>
-                    <button class="add-to-cart">Add to Cart</button>
-                </li>
-                <li class="item" data-category="appetizers">
-                    <span class="item-name">Item 2</span>
-                    <span class="item-price">$4.99</span>
-                    <button class="add-to-cart">Add to Cart</button>
-                </li>
-                <!-- Add more items for each category -->
-            </ul>
-        </div>
-
-        <div class="cart">
-            <h2>Cart</h2>
-            <ul class="cart-items">
-                <!-- Cart items will be displayed here -->
-            </ul>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Cart</h2>
+                <ul class="list-group cart-items">
+                    <!-- Cart items will be displayed here -->
+                </ul>
+            </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
